@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_recently_viewed'
-  s.version     = '1.1.0'
+  s.version     = SpreeRecentlyViewed.version
   s.summary     = 'Adds recently viewed products to Spree'
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
@@ -17,17 +17,18 @@ Gem::Specification.new do |s|
 
   s.has_rdoc = false
 
-  s.add_runtime_dependency 'spree_core', '~> 2.4.0.rc2'
+  s.add_runtime_dependency 'spree_core', '~> 2.4.0.beta'
 
-  s.add_development_dependency 'rspec-rails', '~> 2.14'
+  s.add_development_dependency 'rspec-rails', '~> 3.1.0'
   s.add_development_dependency 'factory_girl', '~> 4.4'
-  s.add_development_dependency 'capybara', '~> 2.2.1'
+  s.add_development_dependency 'capybara', '~> 2.4.4'
   s.add_development_dependency 'poltergeist', '~> 1.5.0'
-  s.add_development_dependency 'sqlite3', '~> 1.3.8'
-  s.add_development_dependency 'simplecov', '~> 0.7.1'
+  s.add_development_dependency 'sqlite3', '~> 1.3.10'
+  s.add_development_dependency 'simplecov', '~> 0.9.0'
   s.add_development_dependency 'coffee-rails', '~> 4.0.0'
   s.add_development_dependency 'sass-rails', '~> 4.0.0'
-  s.add_development_dependency 'database_cleaner', '1.2.0'
+  s.add_development_dependency 'database_cleaner', '1.3.0'
   s.add_development_dependency 'ffaker'
   s.add_development_dependency 'pry-rails'
+  s.add_development_dependency 'rubocop', '>= 0.24.1'
 end
